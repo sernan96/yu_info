@@ -12,4 +12,5 @@ title =[]
 for con in container:
     t = con.select_one("a > span").text.strip()
     title.append(t)
-print(title)
+
+print('\n'.join(title))
